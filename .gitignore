@@ -1,0 +1,6 @@
+### Bazel
+# gitignore template for Bazel build system
+# website: https://bazel.build/
+/bazel-*
+MODULE.bazel.lock
+*.swp
