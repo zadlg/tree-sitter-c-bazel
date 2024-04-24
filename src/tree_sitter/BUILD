@@ -15,17 +15,6 @@
 load("@tree-sitter-c-bazel//:rules.bzl", map = "in_pkg_srcs")
 
 cc_library(
-    name = "alloc",
-    hdrs = map(["alloc.h"]),
-)
-
-cc_library(
-    name = "array",
-    hdrs = map(["array.h"]),
-    deps = [":alloc"],
-)
-
-cc_library(
     name = "parser",
     hdrs = map(["parser.h"]),
     visibility = ["//visibility:public"],
