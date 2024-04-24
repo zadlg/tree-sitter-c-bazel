@@ -16,6 +16,7 @@ load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
 
 cc_library(
     name = "tree-sitter-c",
+    visibility = ["//visibility:public"],
     deps = [
         "@tree-sitter-c-bazel//src:parser",
         "@tree-sitter-c-bazel//src/tree_sitter:parser",
