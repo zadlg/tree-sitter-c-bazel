@@ -20,6 +20,7 @@ cc_library(
         "@tree-sitter-c-bazel//src:parser",
         "@tree-sitter-c-bazel//src/tree_sitter:parser",
     ],
+    visibility = ["//visibility:public"],
 )
 
 sh_binary(
