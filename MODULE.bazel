@@ -15,13 +15,13 @@
 
 module(
     name = "tree-sitter-c-bazel",
-    version = "0.20.7",
+    version = "0.23.4",
     compatibility_level = 1,
     repo_name = "tree-sitter-c-bazel",
 )
 
-bazel_dep(name = "bazel_skylib", version = "1.5.0")
-bazel_dep(name = "tree-sitter-bazel", version = "0.22.5")
+bazel_dep(name = "bazel_skylib", version = "1.7.1")
+bazel_dep(name = "tree-sitter-bazel", version = "0.24.4")
 
 tree_sitter_c_source_code = use_extension(":extensions.bzl", "tree_sitter_c_source_code")
 use_repo(tree_sitter_c_source_code, "tree-sitter-c-raw")
